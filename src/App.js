@@ -4,7 +4,7 @@ import Main from './views/main/Main'
 import Home from './views/home/Home'
 import Auth from './views/auth/Auth'
 import './App.css'
-import PrivateRoute from './components/PrivateRoute'
+import PrivateRoute from './components/PrivateRoute.jsx'
 
 // https://lit-reef-39800.herokuapp.com/ | https://git.heroku.com/lit-reef-39800.git
 
