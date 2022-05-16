@@ -1,70 +1,106 @@
-# Getting Started with Create React App
+# JobSeekr Front End
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+    - Drag and drop
+    - Columns:
+    	○ Wishlist
+    	○ Applied
+    	○ Phone Screen
+    	○ Interview
+    	○ Take Home
+    	○ Offer
+    	○ Rejected
+    	○ Accepted
+    - Sign in/Auth
+    - Notes
+    - Contacts
+    - Metrics
+    	○ Funnel: saved, applied, interviewed, offers etc
+    	○ Stats: # jobs saved, applied etc
 
-## Available Scripts
+## Front End Views
 
-In the project directory, you can run:
+    - Log in / Splash
+    - Sign up
+    - Main kanban/trello/jobs board
+    - Add/Edit job listing
+    - Profile? (Goals)
+    - Metrics
+    - Contacts
+    - Networking agenda?
 
-### `npm start`
+## FE Components
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Log In/Splash
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+    - Header
+    - Log in Form
+    - Sign up button
 
-### `npm test`
+# Sign up
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    - Form
 
-### `npm run build`
+# Main/Dash
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    - Nav
+    - Main Kanban/drag & drop
+    - Kanban item
+    - Footer
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Add/Edit
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    - Title/Header
+    - Form
+    - History/Timeline
+    - Notes
+    - Contact info
+    - Checklist?
+    - ^^ All details same view
 
-### `npm run eject`
+# Form
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    Company
+    Job Title
+    Deadline
+    URL
+    Location
+    Salary
+    Description
+    Contact
+    Notes
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Profile
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    - Job search goals (notes/manifesto)
+    Salary
+    Values
+    Remote
+    - Job search journal (dated entries)
+    - Cover letter builder?
+    - Resume Builder?
+    - Calendar view/networking journal?
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Metrics
 
-## Learn More
+    - Funnel chart
+    - Bar chart: see back end columns >> bools
+    - Stats: # applications etc, % success rate, total apps total interviews total rejects etc etc
+    - Calendar?
+    - Map?
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Contacts
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    - Table:
+    	○ Name
+    	○ Company
+    	○ Email
+    	○ Phone
+    	○ Notes
 
-### Code Splitting
+https://bestofreactjs.com/repo/react-dnd-react-dnd--react-drag-and-drop
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+https://blog.logrocket.com/drag-and-drop-react-dnd/
 
-### Analyzing the Bundle Size
+https://www.freecodecamp.org/news/how-to-add-drag-and-drop-in-react-with-react-beautiful-dnd/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+https://bestofreactjs.com/repo/atlassian-react-beautiful-dnd-react-drag-and-drop
