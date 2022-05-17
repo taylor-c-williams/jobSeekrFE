@@ -2,12 +2,13 @@
   "name": "jobseekrfe",
   "version": "0.1.0",
   "private": true,
-  "devDependencies":{
+  "devDependencies": {
     "webpack": "^5.65.0",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.6.0"
   },
   "dependencies": {
+    "@heroicons/react": "^1.0.6",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
     "@testing-library/user-event": "^13.5.0",
