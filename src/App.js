@@ -3,8 +3,8 @@ import { UserProvider } from './context/UserContext'
 import Main from './views/main/Main'
 import Home from './views/home/Home'
 import Auth from './views/auth/Auth'
-import './App.css'
 import PrivateRoute from './components/PrivateRoute'
+import './App.css'
 
 // https://lit-reef-39800.herokuapp.com/ | https://git.heroku.com/lit-reef-39800.git
 
@@ -13,7 +13,8 @@ function App() {
     <>
       <UserProvider>
         <Routes>
-          <Route path='/' element={<Main />} />
+          <Route path='/' element={<Main login={true} />} />
+          <Route path='/signup' element={<Main login={false} />} />
           <Route path='auth' element={<Auth />} />
           <Route path='home' element={<PrivateRoute children={<Home />} />} />
         </Routes>

@@ -12,34 +12,6 @@ font-family: 'Work Sans', sans-serif;
 #424242 - Onyx
 */
 
-/* Waves SVG Background */
-/* body {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='360' preserveAspectRatio='none' viewBox='0 0 1440 360'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1050%26quot%3b)' fill='none'%3e%3cpath d='M -245.88115453129484%2c121 C -149.88%2c153.2 42.12%2c293.2 234.11884546870516%2c282 C 426.12%2c270.8 522.12%2c60.4 714.1188454687051%2c65 C 906.12%2c69.6 1002.12%2c312.4 1194.118845468705%2c305 C 1386.12%2c297.6 1624.94%2c46.2 1674.118845468705%2c28 C 1723.3%2c9.8 1486.82%2c176.8 1440%2c214' stroke='rgba(245%2c 245%2c 245%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -876.1086785943669%2c228 C -780.11%2c195.4 -588.11%2c44.2 -396.1086785943669%2c65 C -204.11%2c85.8 -108.11%2c323.6 83.89132140563311%2c332 C 275.89%2c340.4 371.89%2c132 563.8913214056331%2c107 C 755.89%2c82 868.67%2c195.4 1043.891321405633%2c207 C 1219.11%2c218.6 1360.78%2c173.4 1440%2c165' stroke='rgba(245%2c 245%2c 245%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -746.3652415323095%2c237 C -650.37%2c215.2 -458.37%2c123.8 -266.36524153230954%2c128 C -74.37%2c132.2 21.63%2c276.4 213.63475846769046%2c258 C 405.63%2c239.6 501.63%2c24.2 693.6347584676905%2c36 C 885.63%2c47.8 1024.36%2c294.8 1173.6347584676905%2c317 C 1322.91%2c339.2 1386.73%2c181 1440%2c147' stroke='rgba(245%2c 245%2c 245%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -648.844226679613%2c289 C -552.84%2c254.4 -360.84%2c134 -168.84422667961303%2c116 C 23.16%2c98 119.16%2c191.6 311.15577332038697%2c199 C 503.16%2c206.4 599.16%2c128.8 791.155773320387%2c153 C 983.16%2c177.2 1141.39%2c315.8 1271.155773320387%2c320 C 1400.92%2c324.2 1406.23%2c203.2 1440%2c174' stroke='rgba(245%2c 245%2c 245%2c 1)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1050'%3e%3crect width='1440' height='360' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
-  background-repeat: no-repeat;
-} */
-
-/* Graph Paper SVG Background */
-/* body {
-  background-color: #ffffff;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23f5f5f5' fill-opacity='1'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-} */
-
-/* Architect SVG Background */
-body {
-  background-color: #ffffff;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='199' viewBox='0 0 100 199'%3E%3Cg fill='%23f5f5f5' fill-opacity='1'%3E%3Cpath d='M0 199V0h1v1.99L100 199h-1.12L1 4.22V199H0zM100 2h-.12l-1-2H100v2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
-}
-
-body,
-html {
-  font-family: 'Cartograph CF', monospace;
-  letter-spacing: 0.01em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px;
-}
-
 fieldset {
   border: dotted 1px grey;
   display: flex;
@@ -50,7 +22,7 @@ fieldset {
 
 legend {
   font-family: 'Playfair Display', serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.5em;
 }
 
@@ -115,4 +87,10 @@ button:hover {
 button:active {
   color: #fcfc62;
   background-color: #c9c9c9;
+}
+
+.LogInLink {
+  text-transform: uppercase;
+  font-size: 0.85em;
+  margin: 1vh;
 }

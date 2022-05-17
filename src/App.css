@@ -1,0 +1,25 @@
+/* 
+font-family: 'Playfair Display', serif;
+font-family: 'Work Sans', sans-serif; 
+*/
+
+/* 
+#FCFC62 - Laser Lemon 
+#FEFFEA - Ivory
+#C9C9c9 - Silver Sand
+#A3A3A3 - Quick Silver
+#424242 - Onyx
+*/
+
+html {
+  margin: 5vh;
+}
+
+a {
+  color: #424242;
+  text-underline-offset: 0.2em;
+}
+
+a:hover {
+  color: #a3a3a3;
+}

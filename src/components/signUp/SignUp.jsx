@@ -1,11 +1,11 @@
-import styles from './AuthForm.module.css'
 import { UserCircleIcon, FingerPrintIcon } from '@heroicons/react/outline'
+import styles from '../logIn/AuthForm.module.css'
 
-export default function LogIn({ handleClick }) {
+export default function SignUpForm({ handleClick }) {
   return (
     <div className={styles.main}>
       <fieldset>
-        <legend>Log In</legend>
+        <legend>Sign Up</legend>
         <label>
           <section className={styles.labelTitle}>
             <UserCircleIcon
@@ -28,7 +28,7 @@ export default function LogIn({ handleClick }) {
           </section>
           <input spellCheck='false' type='password' />
         </label>
-        <button onClick={handleClick}>Log In</button>
+        <button onClick={handleClick}>Sign Up</button>
       </fieldset>
     </div>
   )
