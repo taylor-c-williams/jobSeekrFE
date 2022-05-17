@@ -104,3 +104,18 @@ https://blog.logrocket.com/drag-and-drop-react-dnd/
 https://www.freecodecamp.org/news/how-to-add-drag-and-drop-in-react-with-react-beautiful-dnd/
 
 https://bestofreactjs.com/repo/atlassian-react-beautiful-dnd-react-drag-and-drop
+
+## Attribution
+
+### Cartograph CF Font
+
+https://connary.com/cartograph.html
+
+### Svg background
+
+https://heropatterns.com/
+
+### Icons
+
+https://heroicons.com/
+https://github.com/tailwindlabs/heroicons
