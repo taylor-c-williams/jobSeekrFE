@@ -2,6 +2,7 @@
 
 exports[`renders the Main view & login component accurately 1`] = `
 <div>
+   
   <div>
     <h1>
       seeker
@@ -87,11 +88,13 @@ exports[`renders the Main view & login component accurately 1`] = `
       </section>
     </div>
   </div>
+   
 </div>
 `;
 
 exports[`renders the Main view & sign up component accurately 1`] = `
 <div>
+   
   <div>
     <h1>
       seeker
@@ -129,7 +132,9 @@ exports[`renders the Main view & sign up component accurately 1`] = `
             </section>
             <input
               label="username"
+              name="username"
               spellcheck="false"
+              value=""
             />
           </label>
           <label>
@@ -156,8 +161,11 @@ exports[`renders the Main view & sign up component accurately 1`] = `
               Password
             </section>
             <input
+              label="password"
+              name="password"
               spellcheck="false"
               type="password"
+              value=""
             />
           </label>
           <button>
@@ -177,5 +185,6 @@ exports[`renders the Main view & sign up component accurately 1`] = `
       </section>
     </div>
   </div>
+   
 </div>
 `;

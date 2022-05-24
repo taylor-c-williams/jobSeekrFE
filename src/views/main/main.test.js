@@ -1,11 +1,14 @@
 import { render, screen } from '@testing-library/react'
 import { MemoryRouter } from 'react-router-dom'
+import { UserProvider } from '../../context/UserContext'
 import Main from './Main'
 
 it('renders the Main view & login component accurately', async () => {
   const { container } = render(
     <MemoryRouter>
-      <Main login={true} />
+      <UserProvider>
+        <Main login={true} />
+      </UserProvider>
     </MemoryRouter>
   )
   const text = await screen.findByText("Don't have an account?")
@@ -16,7 +19,9 @@ it('renders the Main view & login component accurately', async () => {
 it('renders the Main view & sign up component accurately', async () => {
   const { container } = render(
     <MemoryRouter>
-      <Main login={false} />
+      <UserProvider>
+        <Main login={false} />
+      </UserProvider>
     </MemoryRouter>
   )
   const text = await screen.findByText('Already have an account?')
