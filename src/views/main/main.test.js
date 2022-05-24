@@ -3,7 +3,7 @@ import { MemoryRouter } from 'react-router-dom'
 import { UserProvider } from '../../context/UserContext'
 import Main from './Main'
 
-it('renders the Main view & login component accurately', async () => {
+it.skip('renders the Main view & login component accurately', async () => {
   const { container } = render(
     <MemoryRouter>
       <UserProvider>
@@ -16,7 +16,7 @@ it('renders the Main view & login component accurately', async () => {
   expect(text).toBeInTheDocument()
 })
 
-it('renders the Main view & sign up component accurately', async () => {
+it.skip('renders the Main view & sign up component accurately', async () => {
   const { container } = render(
     <MemoryRouter>
       <UserProvider>

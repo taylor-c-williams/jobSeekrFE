@@ -30,12 +30,28 @@ export default function Main({ login }) {
     }
   }
 
+  const handleLogin = async () => {
+    const { username, password } = inputData
+    try {
+      await logIn(username, password)
+      const newUser = await getUser()
+      await setUser(newUser)
+      navigate('/home')
+    } catch (error) {
+      console.error('login error!')
+    }
+  }
+
   return (
     <div>
       <h1>seeker</h1>
       {login ? (
         <div>
-          <LogIn />
+          <LogIn
+            handleSubmit={handleLogin}
+            handleInputData={handleInputData}
+            inputData={inputData}
+          />
           <section className={styles.signUpLink}>
             Don't have an account? <Link to='/signup'>Sign up</Link>
           </section>
