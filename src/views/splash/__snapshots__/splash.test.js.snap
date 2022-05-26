@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders the Main view & login component accurately 1`] = `
+exports[`renders the Splash view & login component accurately 1`] = `
 <div>
    
   <div>
@@ -40,7 +40,9 @@ exports[`renders the Main view & login component accurately 1`] = `
             </section>
             <input
               label="username"
+              name="username"
               spellcheck="false"
+              value=""
             />
           </label>
           <label>
@@ -67,8 +69,11 @@ exports[`renders the Main view & login component accurately 1`] = `
               Password
             </section>
             <input
+              label="password"
+              name="password"
               spellcheck="false"
               type="password"
+              value=""
             />
           </label>
           <button>
@@ -92,7 +97,7 @@ exports[`renders the Main view & login component accurately 1`] = `
 </div>
 `;
 
-exports[`renders the Main view & sign up component accurately 1`] = `
+exports[`renders the Splash view & sign up component accurately 1`] = `
 <div>
    
   <div>

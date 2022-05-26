@@ -7,7 +7,7 @@ import { getUser } from '../../services/users'
 import { logIn, signUp } from '../../services/auth'
 import styles from './Splash.module.css'
 
-export default function Main({ login }) {
+export default function Splash({ login }) {
   const [inputData, setInputData] = useState({ username: '', password: '' })
   const { user, setUser } = useUser()
   const navigate = useNavigate()
