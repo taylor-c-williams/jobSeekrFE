@@ -1,8 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 import { UserProvider } from './context/UserContext'
-import Main from './views/main/Main'
+import Splash from './views/splash/Splash'
 import Home from './views/home/Home'
-import Auth from './views/auth/Auth'
 import PrivateRoute from './components/PrivateRoute'
 import './App.css'
 
@@ -13,9 +12,8 @@ function App() {
     <>
       <UserProvider>
         <Routes>
-          <Route path='/' element={<Main login={true} />} />
-          <Route path='/signup' element={<Main login={false} />} />
-          <Route path='auth' element={<Auth />} />
+          <Route path='/' element={<Splash login={true} />} />
+          <Route path='/signup' element={<Splash login={false} />} />
           <Route path='home' element={<PrivateRoute children={<Home />} />} />
         </Routes>
       </UserProvider>

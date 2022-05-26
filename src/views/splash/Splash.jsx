@@ -5,11 +5,11 @@ import SignUp from '../../components/signUp/SignUp'
 import { useUser } from '../../context/UserContext'
 import { getUser } from '../../services/users'
 import { logIn, signUp } from '../../services/auth'
-import styles from './Main.module.css'
+import styles from './Splash.module.css'
 
 export default function Main({ login }) {
   const [inputData, setInputData] = useState({ username: '', password: '' })
-  const { setUser } = useUser()
+  const { user, setUser } = useUser()
   const navigate = useNavigate()
 
   const handleInputData = (e) => {
@@ -42,6 +42,7 @@ export default function Main({ login }) {
     }
   }
 
+  console.log('user:', user)
   return (
     <div>
       <h1>seeker</h1>
