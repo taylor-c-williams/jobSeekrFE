@@ -8,6 +8,7 @@ import { logIn, signUp } from '../../services/auth'
 import styles from './Splash.module.css'
 
 export default function Splash({ login }) {
+  const [loginError, setLoginError] = useState('')
   const [inputData, setInputData] = useState({ username: '', password: '' })
   const { user, setUser } = useUser()
   const navigate = useNavigate()
@@ -38,6 +39,7 @@ export default function Splash({ login }) {
       await setUser(newUser)
       navigate('/home')
     } catch (error) {
+      setLoginError('No such user, please Sign Up!')
       console.error('login error!')
     }
   }
@@ -52,6 +54,7 @@ export default function Splash({ login }) {
             handleSubmit={handleLogin}
             handleInputData={handleInputData}
             inputData={inputData}
+            loginError={loginError}
           />
           <section className={styles.signUpLink}>
             Don't have an account? <Link to='/signup'>Sign up</Link>

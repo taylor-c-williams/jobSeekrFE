@@ -15,7 +15,7 @@ export async function logIn(username, password) {
     .post('http://localhost:7890/api/v1/users/login')
     .send({ username, password })
     .withCredentials()
-  console.log(response.body)
+  if ((response.body = '401')) console.log(response.body)
   return response.body
 }
 
