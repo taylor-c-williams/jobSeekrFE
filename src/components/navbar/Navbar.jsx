@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 import { logOut } from '../../services/auth'
 import { useUser } from '../../context/UserContext'
+import styles from './navbar.module.css'
 
 export default function Navbar() {
   const navigate = useNavigate()
@@ -17,8 +18,9 @@ export default function Navbar() {
   }
 
   return (
-    <div>
-      Navbar Yay you did it
+    <div className={styles.navbar}>
+      <h4>Seeker</h4>
+      <button className={styles.add}>+job</button>
       <button onClick={handleLogOut}>Log Out</button>
     </div>
   )
