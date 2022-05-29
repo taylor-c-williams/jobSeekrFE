@@ -1,5 +1,12 @@
-import React from 'react'
-
+import Navbar from '../../components/navbar/Navbar'
+import Kanban from '../../components/kanban/Kanban'
+import Footer from '../../components/footer/Footer'
 export default function Home() {
-  return <div>Yay you did it</div>
+  return (
+    <div>
+      <Navbar />
+      <Kanban />
+      <Footer />
+    </div>
+  )
 }

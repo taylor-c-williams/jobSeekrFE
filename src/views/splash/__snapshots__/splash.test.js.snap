@@ -1,0 +1,195 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the Splash view & login component accurately 1`] = `
+<div>
+   
+  <div>
+    <h1>
+      seeker
+    </h1>
+    <div>
+      <div
+        class="main"
+      >
+        <fieldset>
+          <legend>
+            Log In
+          </legend>
+          <label>
+            <section
+              class="labelTitle"
+            >
+              <svg
+                aria-hidden="true"
+                class="labelIcon"
+                fill="none"
+                height="15"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="15"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              Username
+            </section>
+            <input
+              label="username"
+              name="username"
+              spellcheck="false"
+              value=""
+            />
+          </label>
+          <label>
+            <section
+              class="labelTitle"
+            >
+              <svg
+                aria-hidden="true"
+                class="labelIcon"
+                fill="none"
+                height="15"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="15"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              Password
+            </section>
+            <input
+              label="password"
+              name="password"
+              spellcheck="false"
+              type="password"
+              value=""
+            />
+          </label>
+          <button>
+            Log In
+          </button>
+        </fieldset>
+      </div>
+      <section
+        class="signUpLink"
+      >
+        Don't have an account? 
+        <a
+          href="/signup"
+        >
+          Sign up
+        </a>
+      </section>
+    </div>
+  </div>
+   
+</div>
+`;
+
+exports[`renders the Splash view & sign up component accurately 1`] = `
+<div>
+   
+  <div>
+    <h1>
+      seeker
+    </h1>
+    <div>
+      <div
+        class="main"
+      >
+        <fieldset>
+          <legend>
+            Sign Up
+          </legend>
+          <label>
+            <section
+              class="labelTitle"
+            >
+              <svg
+                aria-hidden="true"
+                class="labelIcon"
+                fill="none"
+                height="15"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="15"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              Username
+            </section>
+            <input
+              label="username"
+              name="username"
+              spellcheck="false"
+              value=""
+            />
+          </label>
+          <label>
+            <section
+              class="labelTitle"
+            >
+              <svg
+                aria-hidden="true"
+                class="labelIcon"
+                fill="none"
+                height="15"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="15"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              Password
+            </section>
+            <input
+              label="password"
+              name="password"
+              spellcheck="false"
+              type="password"
+              value=""
+            />
+          </label>
+          <button>
+            Sign Up
+          </button>
+        </fieldset>
+      </div>
+      <section
+        class="signUpLink"
+      >
+        Already have an account? 
+        <a
+          href="/"
+        >
+          Log In
+        </a>
+      </section>
+    </div>
+  </div>
+   
+</div>
+`;
