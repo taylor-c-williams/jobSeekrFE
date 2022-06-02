@@ -8,7 +8,6 @@ export async function signUp(username, password) {
   console.log(response.body)
   return response.body
 }
-
 // Log In
 export async function logIn(username, password) {
   const response = await request
