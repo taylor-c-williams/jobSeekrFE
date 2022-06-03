@@ -19,8 +19,8 @@
 
 ## Front End Views
 
-    - Log in / Splash
-    - Sign up
+    - Log in / Splash ✔︎
+    - Sign up ✔︎
     - Main kanban/trello/jobs board
     - Add/Edit job listing
     - Profile? (Goals)
@@ -32,19 +32,20 @@
 
 # Log In/Splash
 
-    - Header
-    - Log in Form
-    - Sign up button
+    - Header ✔︎
+    - Log in Form ✔︎
+    - Sign up button ✔︎
 
 # Sign up
 
-    - Form
+    - Form ✔︎
 
 # Main/Dash
 
     - Nav
     - Main Kanban/drag & drop
     - Kanban item
+        - Kanban item detail / edit / delete
     - Footer
 
 # Add/Edit
@@ -68,6 +69,20 @@
     Description
     Contact
     Notes
+
+## FE Utils
+
+    > CREATE jobs ❤︎
+    > GET jobs
+        > All by id
+        > Each column (WHERE param = true)
+    > UPDATE jobs
+        > By id
+    > DELETE jobs
+        > By id
+
+each column will GET by that param
+dragging a job into a new column will update status column param = true, prev column param = false
 
 # Profile
 

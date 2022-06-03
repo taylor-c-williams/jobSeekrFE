@@ -4,10 +4,7 @@ import { getUser } from '../services/users'
 const UserContext = createContext()
 
 const UserProvider = ({ children }) => {
-  const [user, setUser] = useState({
-    username: '',
-    password: '',
-  })
+  const [user, setUser] = useState({})
 
   useEffect(() => {
     const fetchCurrentUser = async () => {
