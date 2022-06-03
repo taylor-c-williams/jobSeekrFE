@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 import { logOut } from '../../services/auth'
 import { useUser } from '../../context/UserContext'
 import styles from './navbar.module.css'
@@ -17,10 +17,18 @@ export default function Navbar() {
     }
   }
 
+  const handleNav = () => {
+    navigate('/newjob')
+  }
+
   return (
     <div className={styles.navbar}>
-      <h4>Seeker</h4>
-      <button className={styles.add}>+job</button>
+      <Link to='/home'>
+        <h4>Seeker</h4>
+      </Link>
+      <button className={styles.add} onClick={handleNav}>
+        +job
+      </button>
       <button onClick={handleLogOut}>Log Out</button>
     </div>
   )
