@@ -10,10 +10,38 @@ import {
   PencilAltIcon,
   StarIcon,
 } from '@heroicons/react/outline'
+import { useState } from 'react'
+import { postJob } from '../../services/users'
 import NavBar from '../navbar/Navbar'
 import styles from './newJob.module.css'
 
 export default function NewJob() {
+  const [inputData, setInputData] = useState({
+    jobTitle: '',
+    company: '',
+    url: '',
+    salary: '',
+    remote: '',
+    zipcode: '',
+    contactName: '',
+    contactEmail: '',
+    description: '',
+    notes: '',
+  })
+
+  const handleInputData = (e) => {
+    const { value, name } = e.target
+    setInputData({ ...inputData, [name]: value })
+  }
+
+  const handleSave = async () => {
+    try {
+      await postJob(inputData)
+    } catch (error) {
+      console.error('new job error')
+    }
+  }
+
   return (
     <div>
       <NavBar />
@@ -32,8 +60,8 @@ export default function NewJob() {
               Job Title
             </section>
             <input
-              // onChange={handleInputData}
-              // value={inputData.jobTitle}
+              onChange={handleInputData}
+              value={inputData.jobTitle}
               name='job title'
               label='job title'
             />
@@ -50,8 +78,8 @@ export default function NewJob() {
               Company
             </section>
             <input
-              // onChange={handleInputData}
-              // value={inputData.company}
+              onChange={handleInputData}
+              value={inputData.company}
               name='Company'
               label='Company'
             />
@@ -64,8 +92,8 @@ export default function NewJob() {
               Post URL
             </section>
             <input
-              // onChange={handleInputData}
-              // value={inputData.url}
+              onChange={handleInputData}
+              value={inputData.url}
               name='url'
               label='url'
             />
@@ -78,8 +106,8 @@ export default function NewJob() {
               Salary
             </section>
             <input
-              // onChange={handleInputData}
-              // value={inputData.Salary}
+              onChange={handleInputData}
+              value={inputData.Salary}
               name='Salary'
               label='Salary'
             />
@@ -98,13 +126,15 @@ export default function NewJob() {
           </section>
           <section className={styles.radioArea}>
             <label>
+              {/* 
+              TODO: Set state w/radio buttons
+               */}
               <input
                 type='radio'
                 id='remote'
                 name='remote-status'
                 // onChange={handleInputData}
                 // value={inputData.remote}
-                // checked
               />
               Fully Remote
             </label>
@@ -145,8 +175,8 @@ export default function NewJob() {
            */}
             <input
               type='number'
-              // onChange={handleInputData}
-              // value={inputData.company}
+              onChange={handleInputData}
+              value={inputData.zipcode}
               name='zipcode'
               label='zipcode'
             />
@@ -163,8 +193,8 @@ export default function NewJob() {
               Contact Name
             </section>
             <input
-              // onChange={handleInputData}
-              // value={inputData.Contact Name}
+              onChange={handleInputData}
+              value={inputData.contactName}
               name='Contact Name'
               label='Contact Name'
             />
@@ -181,8 +211,8 @@ export default function NewJob() {
               Contact Email
             </section>
             <input
-              // onChange={handleInputData}
-              // value={inputData.Contact Email}
+              onChange={handleInputData}
+              value={inputData.contactEmail}
               name='Contact Email'
               label='Contact Email'
             />
@@ -206,8 +236,8 @@ export default function NewJob() {
           https://openbase.com/categories/js/best-react-wysiwyg-editor-libraries
           */}
           <textarea
-            // onChange={handleInputData}
-            // value={inputData.Description}
+            onChange={handleInputData}
+            value={inputData.description}
             name='Description'
             label='Description'
           />
@@ -221,8 +251,8 @@ export default function NewJob() {
           </section>
           <textarea
             className={styles.notes}
-            // onChange={handleInputData}
-            // value={inputData.Notes}
+            onChange={handleInputData}
+            value={inputData.notes}
             name='Notes'
             label='Notes'
           />
