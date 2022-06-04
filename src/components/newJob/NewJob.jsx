@@ -34,13 +34,13 @@ export default function NewJob() {
     setInputData({ ...inputData, [name]: value })
   }
 
-  const handleSave = async () => {
-    try {
-      await postJob(inputData)
-    } catch (error) {
-      console.error('new job error')
-    }
-  }
+  // const handleSave = async () => {
+  //   try {
+  //     await postJob(inputData)
+  //   } catch (error) {
+  //     console.error('new job error')
+  //   }
+  // }
 
   return (
     <div>
