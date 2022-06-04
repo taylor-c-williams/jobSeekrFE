@@ -12,8 +12,9 @@ export async function getUser() {
 export async function postJob(job) {
   const response = await request
     // .post(`'http://localhost:7890/api/v1/jobs`)
-    .post(`'https://polar-reaches-12563.herokuapp.com/api/v1/jobs`)
-    .withCredentials()
+    .post(`https://polar-reaches-12563.herokuapp.com/api/v1/jobs`)
     .send(job)
+    .withCredentials()
+  console.log(response.body)
   return response.body
 }

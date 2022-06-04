@@ -11,25 +11,27 @@ import {
   StarIcon,
 } from '@heroicons/react/outline'
 import { useState } from 'react'
-// import { postJob } from '../../services/users'
+import { useUser } from '../../context/UserContext'
+import { postJob } from '../../services/users'
 import NavBar from '../navbar/Navbar'
 import styles from './newJob.module.css'
 
 export default function NewJob() {
-  const [inputData, setInputData] = useState({})
+  const { user } = useUser()
+  const [inputData, setInputData] = useState({ user_id: user.id })
 
   const handleInputData = (e) => {
     const { value, name } = e.target
     setInputData({ ...inputData, [name]: value })
   }
 
-  // const handleSave = async () => {
-  //   try {
-  //     await postJob(inputData)
-  //   } catch (error) {
-  //     console.error('new job error')
-  //   }
-  // }
+  const handleSave = async () => {
+    try {
+      await postJob(inputData)
+    } catch (error) {
+      console.error('new job error')
+    }
+  }
 
   return (
     <div>
@@ -52,7 +54,6 @@ export default function NewJob() {
               onChange={handleInputData}
               value={inputData.jobTitle}
               name='jobTitle'
-              label='jobTitle'
             />
           </label>
 
@@ -69,8 +70,7 @@ export default function NewJob() {
             <input
               onChange={handleInputData}
               value={inputData.company}
-              name='Company'
-              label='Company'
+              name='company'
             />
           </label>
 
@@ -84,7 +84,6 @@ export default function NewJob() {
               onChange={handleInputData}
               value={inputData.url}
               name='url'
-              label='url'
             />
           </label>
 
@@ -97,8 +96,7 @@ export default function NewJob() {
             <input
               onChange={handleInputData}
               value={inputData.salary}
-              name='Salary'
-              label='Salary'
+              name='salary'
             />
           </label>
         </section>
@@ -122,8 +120,8 @@ export default function NewJob() {
                 type='radio'
                 id='remote'
                 name='remote-status'
-                // onChange={handleInputData}
-                // value={inputData.remote}
+                value='true'
+                onChange={handleInputData}
               />
               Fully Remote
             </label>
@@ -132,8 +130,8 @@ export default function NewJob() {
                 type='radio'
                 id='hybrid'
                 name='remote-status'
-                // onChange={handleInputData}
-                // value={inputData.remote}
+                value='hybrid'
+                onChange={handleInputData}
               />
               Hybrid
             </label>
@@ -142,8 +140,8 @@ export default function NewJob() {
                 type='radio'
                 id='in-person'
                 name='remote-status'
-                // onChange={handleInputData}
-                // value={inputData.remote}
+                value='false'
+                onChange={handleInputData}
               />
               In-Person
             </label>
@@ -167,7 +165,6 @@ export default function NewJob() {
               onChange={handleInputData}
               value={inputData.zipcode}
               name='zipcode'
-              label='zipcode'
             />
           </label>
 
@@ -184,8 +181,7 @@ export default function NewJob() {
             <input
               onChange={handleInputData}
               value={inputData.contactName}
-              name='Contact Name'
-              label='Contact Name'
+              name='contact_name'
             />
           </label>
 
@@ -202,8 +198,7 @@ export default function NewJob() {
             <input
               onChange={handleInputData}
               value={inputData.contactEmail}
-              name='Contact Email'
-              label='Contact Email'
+              name='contact_email'
             />
           </label>
         </section>
@@ -227,8 +222,7 @@ export default function NewJob() {
           <textarea
             onChange={handleInputData}
             value={inputData.description}
-            name='Description'
-            label='Description'
+            name='description'
           />
         </label>
 
@@ -242,12 +236,11 @@ export default function NewJob() {
             className={styles.notes}
             onChange={handleInputData}
             value={inputData.notes}
-            name='Notes'
-            label='Notes'
+            name='notes'
           />
         </label>
       </fieldset>
-      <button>Save</button>
+      <button onClick={handleSave}>Save</button>
     </div>
   )
 }
