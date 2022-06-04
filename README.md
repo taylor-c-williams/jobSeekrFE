@@ -73,6 +73,13 @@
 ## FE Utils
 
     > CREATE jobs ❤︎
+        >> TODO 6/2
+            +Job button broken on deploy (works locally) ✔︎
+            Font too thin on deploy (bolded locally) ✔︎
+            Add Salary column to BE ✔︎
+            Create job function
+            => LATER: React lib for WYSIWYG text editor
+            => LATER: React lib for zipcode to city/state/country
     > GET jobs
         > All by id
         > Each column (WHERE param = true)

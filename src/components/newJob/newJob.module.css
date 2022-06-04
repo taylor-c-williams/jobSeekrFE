@@ -1,5 +1,30 @@
+fieldset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .labelTitle {
-  margin-top: 3vh;
+  margin-top: 3vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.2em;
+}
+
+.labelTitleRemote {
+  margin-top: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.remoteSection {
+  font-size: 1.2em;
+  background-color: #f6f7f3;
+  padding: 1vw;
+  border-radius: 2px;
+  margin-top: 2vw;
 }
 
 .radioArea {
@@ -10,22 +35,36 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-right: 5vh;
+  padding-right: 5vw;
 }
 
 .radioArea input {
   display: block;
-  margin: 2vh;
-  width: 10vh;
+  margin: 2vw;
+  width: 10vw;
 }
 
 .notes {
-  height: 25vh;
-  width: 75vh;
+  height: 25vw;
+  width: 50vw;
 }
 
 textarea {
-  margin-top: 1.5vh;
-  height: 50vh;
-  width: 75vh;
+  margin-top: 1.5vw;
+  height: 25vw;
+  width: 50vw;
+}
+
+.labelIcon {
+  margin: 1vw;
+}
+
+.newJobTop {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.newJobBottom {
+  display: flex;
 }
