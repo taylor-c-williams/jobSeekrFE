@@ -9,10 +9,11 @@ export async function getUser() {
   return res.body
 }
 
-// export async function postJob({ attributes }) {
-//   const response = await request
-//     .post(`'http://localhost:7890/api/v1/jobs`)
-//     .withCredentials()
-//     .send({ attributes })
-//   return response.body
-// }
+export async function postJob(job) {
+  const response = await request
+    // .post(`'http://localhost:7890/api/v1/jobs`)
+    .post(`'https://polar-reaches-12563.herokuapp.com/api/v1/jobs`)
+    .withCredentials()
+    .send(job)
+  return response.body
+}

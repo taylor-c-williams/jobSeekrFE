@@ -1,3 +1,15 @@
+import {
+  BriefcaseIcon,
+  OfficeBuildingIcon,
+  DesktopComputerIcon,
+  CashIcon,
+  GlobeIcon,
+  LinkIcon,
+  UserCircleIcon,
+  AtSymbolIcon,
+  PencilAltIcon,
+  StarIcon,
+} from '@heroicons/react/outline'
 import NavBar from '../navbar/Navbar'
 import styles from './newJob.module.css'
 
@@ -11,8 +23,12 @@ export default function NewJob() {
         {/* Title */}
         <label>
           <section className={styles.labelTitle}>
+            <BriefcaseIcon
+              height={15}
+              width={15}
+              className={styles.labelIcon}
+            />
             Job Title
-            {/* Job title hero icon */}
           </section>
           <input
             // onChange={handleInputData}
@@ -25,8 +41,12 @@ export default function NewJob() {
         {/* Company */}
         <label>
           <section className={styles.labelTitle}>
+            <OfficeBuildingIcon
+              height={15}
+              width={15}
+              className={styles.labelIcon}
+            />
             Company
-            {/* Company hero icon */}
           </section>
           <input
             // onChange={handleInputData}
@@ -38,8 +58,12 @@ export default function NewJob() {
 
         {/* Remote */}
         <section className={styles.labelTitle}>
+          <DesktopComputerIcon
+            height={15}
+            width={15}
+            className={styles.labelIcon}
+          />
           <label>This role is...</label>
-          {/* Remote hero icon */}
         </section>
         <section className={styles.radioArea}>
           <label>
@@ -75,12 +99,11 @@ export default function NewJob() {
           </label>
         </section>
 
-        {/* TODO: Add Salary column to DB */}
         {/* Salary */}
         <label>
           <section className={styles.labelTitle}>
+            <CashIcon height={15} width={15} className={styles.labelIcon} />
             Salary
-            {/* Salary hero icon */}
           </section>
           <input
             // onChange={handleInputData}
@@ -93,8 +116,8 @@ export default function NewJob() {
         {/* Zipcode */}
         <label>
           <section className={styles.labelTitle}>
+            <GlobeIcon height={15} width={15} className={styles.labelIcon} />
             Zipcode
-            {/* location icon */}
           </section>
           {/* 
           TODO: React Zipcode => City, State, Country API
@@ -113,8 +136,8 @@ export default function NewJob() {
         {/* URL */}
         <label>
           <section className={styles.labelTitle}>
+            <LinkIcon height={15} width={15} className={styles.labelIcon} />
             Post URL
-            {/* www hero icon */}
           </section>
           <input
             // onChange={handleInputData}
@@ -127,8 +150,12 @@ export default function NewJob() {
         {/* Contact Name */}
         <label>
           <section className={styles.labelTitle}>
+            <UserCircleIcon
+              height={15}
+              width={15}
+              className={styles.labelIcon}
+            />
             Contact Name
-            {/* Contact Name hero icon */}
           </section>
           <input
             // onChange={handleInputData}
@@ -141,8 +168,8 @@ export default function NewJob() {
         {/* Contact Email */}
         <label>
           <section className={styles.labelTitle}>
+            <AtSymbolIcon height={15} width={15} className={styles.labelIcon} />
             Contact Email
-            {/* Contact Email hero icon */}
           </section>
           <input
             // onChange={handleInputData}
@@ -155,8 +182,12 @@ export default function NewJob() {
         {/* Description */}
         <label>
           <section className={styles.labelTitle}>
+            <PencilAltIcon
+              height={15}
+              width={15}
+              className={styles.labelIcon}
+            />
             Role Description
-            {/* Description hero icon */}
           </section>
           {/* 
           TODO: Swap textarea for WYSIWYG react lib:
@@ -175,8 +206,8 @@ export default function NewJob() {
         {/* Notes */}
         <label>
           <section className={styles.labelTitle}>
+            <StarIcon height={15} width={15} className={styles.labelIcon} />
             More Notes
-            {/* Notes hero icon */}
           </section>
           <textarea
             className={styles.notes}
