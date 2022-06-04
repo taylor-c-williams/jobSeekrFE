@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import { jobsData } from '../../data/jobs'
 import { getAllUserJobs } from '../../services/users'
 import KanbanItem from './KanbanItem'
 import styles from './kanban.module.css'
