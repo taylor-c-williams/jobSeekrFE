@@ -11,7 +11,7 @@ import {
   StarIcon,
 } from '@heroicons/react/outline'
 import { useState } from 'react'
-import { postJob } from '../../services/users'
+// import { postJob } from '../../services/users'
 import NavBar from '../navbar/Navbar'
 import styles from './newJob.module.css'
 
