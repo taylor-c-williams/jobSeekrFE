@@ -16,18 +16,7 @@ import NavBar from '../navbar/Navbar'
 import styles from './newJob.module.css'
 
 export default function NewJob() {
-  const [inputData, setInputData] = useState({
-    jobTitle: '',
-    company: '',
-    url: '',
-    salary: '',
-    remote: '',
-    zipcode: '',
-    contactName: '',
-    contactEmail: '',
-    description: '',
-    notes: '',
-  })
+  const [inputData, setInputData] = useState({})
 
   const handleInputData = (e) => {
     const { value, name } = e.target
@@ -62,8 +51,8 @@ export default function NewJob() {
             <input
               onChange={handleInputData}
               value={inputData.jobTitle}
-              name='job title'
-              label='job title'
+              name='jobTitle'
+              label='jobTitle'
             />
           </label>
 
@@ -107,7 +96,7 @@ export default function NewJob() {
             </section>
             <input
               onChange={handleInputData}
-              value={inputData.Salary}
+              value={inputData.salary}
               name='Salary'
               label='Salary'
             />
