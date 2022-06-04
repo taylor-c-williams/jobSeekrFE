@@ -87,46 +87,48 @@ export default function NewJob() {
         </section>
 
         {/* Remote */}
-        <section className={styles.labelTitle}>
-          <DesktopComputerIcon
-            height={15}
-            width={15}
-            className={styles.labelIcon}
-          />
-          <label>This role is...</label>
-        </section>
-        <section className={styles.radioArea}>
-          <label>
-            <input
-              type='radio'
-              id='remote'
-              name='remote-status'
-              // onChange={handleInputData}
-              // value={inputData.remote}
-              // checked
+        <section className={styles.remoteSection}>
+          <section className={styles.labelTitleRemote}>
+            <DesktopComputerIcon
+              height={15}
+              width={15}
+              className={styles.labelIconRadio}
             />
-            Fully Remote
-          </label>
-          <label>
-            <input
-              type='radio'
-              id='hybrid'
-              name='remote-status'
-              // onChange={handleInputData}
-              // value={inputData.remote}
-            />
-            Hybrid
-          </label>
-          <label>
-            <input
-              type='radio'
-              id='in-person'
-              name='remote-status'
-              // onChange={handleInputData}
-              // value={inputData.remote}
-            />
-            In-Person
-          </label>
+            <label>This role is...</label>
+          </section>
+          <section className={styles.radioArea}>
+            <label>
+              <input
+                type='radio'
+                id='remote'
+                name='remote-status'
+                // onChange={handleInputData}
+                // value={inputData.remote}
+                // checked
+              />
+              Fully Remote
+            </label>
+            <label>
+              <input
+                type='radio'
+                id='hybrid'
+                name='remote-status'
+                // onChange={handleInputData}
+                // value={inputData.remote}
+              />
+              Hybrid
+            </label>
+            <label>
+              <input
+                type='radio'
+                id='in-person'
+                name='remote-status'
+                // onChange={handleInputData}
+                // value={inputData.remote}
+              />
+              In-Person
+            </label>
+          </section>
         </section>
 
         <section className={styles.newJobBottom}>
