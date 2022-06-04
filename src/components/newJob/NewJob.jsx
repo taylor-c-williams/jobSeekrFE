@@ -20,41 +20,71 @@ export default function NewJob() {
       <fieldset>
         <legend>Add New Job</legend>
 
-        {/* Title */}
-        <label>
-          <section className={styles.labelTitle}>
-            <BriefcaseIcon
-              height={15}
-              width={15}
-              className={styles.labelIcon}
+        <section className={styles.newJobTop}>
+          {/* Title */}
+          <label>
+            <section className={styles.labelTitle}>
+              <BriefcaseIcon
+                height={15}
+                width={15}
+                className={styles.labelIcon}
+              />
+              Job Title
+            </section>
+            <input
+              // onChange={handleInputData}
+              // value={inputData.jobTitle}
+              name='job title'
+              label='job title'
             />
-            Job Title
-          </section>
-          <input
-            // onChange={handleInputData}
-            // value={inputData.jobTitle}
-            name='job title'
-            label='job title'
-          />
-        </label>
+          </label>
 
-        {/* Company */}
-        <label>
-          <section className={styles.labelTitle}>
-            <OfficeBuildingIcon
-              height={15}
-              width={15}
-              className={styles.labelIcon}
+          {/* Company */}
+          <label>
+            <section className={styles.labelTitle}>
+              <OfficeBuildingIcon
+                height={15}
+                width={15}
+                className={styles.labelIcon}
+              />
+              Company
+            </section>
+            <input
+              // onChange={handleInputData}
+              // value={inputData.company}
+              name='Company'
+              label='Company'
             />
-            Company
-          </section>
-          <input
-            // onChange={handleInputData}
-            // value={inputData.company}
-            name='Company'
-            label='Company'
-          />
-        </label>
+          </label>
+
+          {/* URL */}
+          <label>
+            <section className={styles.labelTitle}>
+              <LinkIcon height={15} width={15} className={styles.labelIcon} />
+              Post URL
+            </section>
+            <input
+              // onChange={handleInputData}
+              // value={inputData.url}
+              name='url'
+              label='url'
+            />
+          </label>
+
+          {/* Salary */}
+          <label>
+            <section className={styles.labelTitle}>
+              <CashIcon height={15} width={15} className={styles.labelIcon} />
+              Salary
+            </section>
+            <input
+              // onChange={handleInputData}
+              // value={inputData.Salary}
+              name='Salary'
+              label='Salary'
+            />
+          </label>
+        </section>
 
         {/* Remote */}
         <section className={styles.labelTitle}>
@@ -99,85 +129,63 @@ export default function NewJob() {
           </label>
         </section>
 
-        {/* Salary */}
-        <label>
-          <section className={styles.labelTitle}>
-            <CashIcon height={15} width={15} className={styles.labelIcon} />
-            Salary
-          </section>
-          <input
-            // onChange={handleInputData}
-            // value={inputData.Salary}
-            name='Salary'
-            label='Salary'
-          />
-        </label>
-
-        {/* Zipcode */}
-        <label>
-          <section className={styles.labelTitle}>
-            <GlobeIcon height={15} width={15} className={styles.labelIcon} />
-            Zipcode
-          </section>
-          {/* 
+        <section className={styles.newJobBottom}>
+          {/* Zipcode */}
+          <label>
+            <section className={styles.labelTitle}>
+              <GlobeIcon height={15} width={15} className={styles.labelIcon} />
+              Zipcode
+            </section>
+            {/* 
           TODO: React Zipcode => City, State, Country API
           https://dev.to/vetswhocode/react-tutorial-city-state-lookup-using-the-us-postal-service-api-202p
           * Store zipcode in DB but display city, state etc. 
            */}
-          <input
-            type='number'
-            // onChange={handleInputData}
-            // value={inputData.company}
-            name='zipcode'
-            label='zipcode'
-          />
-        </label>
-
-        {/* URL */}
-        <label>
-          <section className={styles.labelTitle}>
-            <LinkIcon height={15} width={15} className={styles.labelIcon} />
-            Post URL
-          </section>
-          <input
-            // onChange={handleInputData}
-            // value={inputData.url}
-            name='url'
-            label='url'
-          />
-        </label>
-
-        {/* Contact Name */}
-        <label>
-          <section className={styles.labelTitle}>
-            <UserCircleIcon
-              height={15}
-              width={15}
-              className={styles.labelIcon}
+            <input
+              type='number'
+              // onChange={handleInputData}
+              // value={inputData.company}
+              name='zipcode'
+              label='zipcode'
             />
-            Contact Name
-          </section>
-          <input
-            // onChange={handleInputData}
-            // value={inputData.Contact Name}
-            name='Contact Name'
-            label='Contact Name'
-          />
-        </label>
+          </label>
 
-        {/* Contact Email */}
-        <label>
-          <section className={styles.labelTitle}>
-            <AtSymbolIcon height={15} width={15} className={styles.labelIcon} />
-            Contact Email
-          </section>
-          <input
-            // onChange={handleInputData}
-            // value={inputData.Contact Email}
-            name='Contact Email'
-            label='Contact Email'
-          />
-        </label>
+          {/* Contact Name */}
+          <label>
+            <section className={styles.labelTitle}>
+              <UserCircleIcon
+                height={15}
+                width={15}
+                className={styles.labelIcon}
+              />
+              Contact Name
+            </section>
+            <input
+              // onChange={handleInputData}
+              // value={inputData.Contact Name}
+              name='Contact Name'
+              label='Contact Name'
+            />
+          </label>
+
+          {/* Contact Email */}
+          <label>
+            <section className={styles.labelTitle}>
+              <AtSymbolIcon
+                height={15}
+                width={15}
+                className={styles.labelIcon}
+              />
+              Contact Email
+            </section>
+            <input
+              // onChange={handleInputData}
+              // value={inputData.Contact Email}
+              name='Contact Email'
+              label='Contact Email'
+            />
+          </label>
+        </section>
 
         {/* Description */}
         <label>

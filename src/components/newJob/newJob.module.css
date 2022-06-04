@@ -1,3 +1,9 @@
+fieldset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .labelTitle {
   margin-top: 3vh;
 }
@@ -38,4 +44,14 @@ textarea {
 
 .labelIcon {
   margin: 1vh;
+}
+
+.newJobTop {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.newJobBottom {
+  display: flex;
 }
