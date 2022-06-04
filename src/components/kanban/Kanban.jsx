@@ -1,14 +1,22 @@
 import { useState, useEffect } from 'react'
 import { jobsData } from '../../data/jobs'
+import { getAllUserJobs } from '../../services/users'
 import KanbanItem from './KanbanItem'
 import styles from './kanban.module.css'
 
 export default function Kanban() {
   const [jobs, setJobs] = useState([])
 
+  const fetchJobs = async () => {
+    const userJobs = await getAllUserJobs()
+    setJobs(userJobs)
+  }
+
   useEffect(() => {
-    setJobs(jobsData)
-  }, [jobs])
+    fetchJobs()
+  }, [])
+
+  console.log(jobs)
 
   return (
     <div className={styles.kanbanBoard}>

@@ -28,6 +28,7 @@ export default function NewJob() {
   const handleSave = async () => {
     try {
       await postJob(inputData)
+      console.log(inputData)
     } catch (error) {
       console.error('new job error')
     }
@@ -52,8 +53,8 @@ export default function NewJob() {
             </section>
             <input
               onChange={handleInputData}
-              value={inputData.jobTitle}
-              name='jobTitle'
+              value={inputData.title}
+              name='title'
             />
           </label>
 

@@ -15,6 +15,13 @@ export async function postJob(job) {
     .post(`https://polar-reaches-12563.herokuapp.com/api/v1/jobs`)
     .send(job)
     .withCredentials()
-  console.log(response.body)
+  return response.body
+}
+
+export async function getAllUserJobs(userId) {
+  const response = await request
+    // .post(`'http://localhost:7890/api/v1/jobs`)
+    .get(`https://polar-reaches-12563.herokuapp.com/api/v1/jobs`)
+    .withCredentials()
   return response.body
 }
