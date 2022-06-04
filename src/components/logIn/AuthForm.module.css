@@ -75,7 +75,8 @@ button {
   border: solid 1px grey;
   border-radius: 2px;
   align-self: flex-end;
-  font-family: 'Cartograph CF Demi', monospace;
+  font-family: 'Cartograph CF', monospace;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.07em;
 }
