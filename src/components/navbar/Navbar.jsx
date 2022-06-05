@@ -11,7 +11,7 @@ export default function Navbar() {
     try {
       await logOut()
       setUser({})
-      navigate('/')
+      navigate('/auth')
     } catch (error) {
       console.error('logout error!')
     }

@@ -25,7 +25,7 @@ export default function Splash({ login }) {
       await logIn(username, password)
       const newUser = await getUser()
       await setUser(newUser)
-      navigate('/home')
+      navigate('/')
     } catch (error) {
       console.error('signup error')
     }
@@ -37,7 +37,7 @@ export default function Splash({ login }) {
       await logIn(username, password)
       const newUser = await getUser()
       await setUser(newUser)
-      navigate('/home')
+      navigate('/')
     } catch (error) {
       setLoginError('No such user, please Sign Up!')
       console.error('login error!')
