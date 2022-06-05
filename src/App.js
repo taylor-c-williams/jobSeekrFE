@@ -13,9 +13,9 @@ function App() {
     <>
       <UserProvider>
         <Routes>
-          <Route path='/' element={<Splash login={true} />} />
+          <Route path='auth' element={<Splash login={true} />} />
           <Route path='signup' element={<Splash login={false} />} />
-          <Route path='home' element={<PrivateRoute children={<Home />} />} />
+          <Route path='/' element={<PrivateRoute children={<Home />} />} />
           <Route
             path='newJob'
             element={<PrivateRoute children={<NewJob />} />}

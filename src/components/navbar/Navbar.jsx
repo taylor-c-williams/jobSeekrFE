@@ -5,18 +5,18 @@ import styles from './navbar.module.css'
 
 export default function Navbar() {
   const navigate = useNavigate()
-  const { setUser } = useUser()
+  const { user, setUser } = useUser()
 
   const handleLogOut = async () => {
     try {
       await logOut()
       setUser({})
-      navigate('/')
+      navigate('/auth')
     } catch (error) {
       console.error('logout error!')
     }
   }
-
+  console.log('user', user)
   const handleNav = () => {
     navigate('/newjob')
   }
