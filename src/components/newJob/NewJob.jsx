@@ -41,9 +41,9 @@ export default function NewJob() {
   }
 
   return (
-    <div>
+    <div className={styles.newJobContainer}>
       <NavBar />
-      <fieldset>
+      <fieldset className={styles.newJobFieldset}>
         <legend>Add New Job</legend>
 
         <section className={styles.newJobTop}>
@@ -108,7 +108,7 @@ export default function NewJob() {
           </label>
         </section>
 
-        {/* Remote */}
+        {/* Remote Radio Group */}
         <section className={styles.remoteSection}>
           <section className={styles.labelTitleRemote}>
             <DesktopComputerIcon
@@ -120,13 +120,10 @@ export default function NewJob() {
           </section>
           <section className={styles.radioArea}>
             <label>
-              {/* 
-              TODO: Set state w/radio buttons
-               */}
               <input
                 type='radio'
                 id='remote'
-                name='remote-status'
+                name='remote'
                 value='true'
                 onChange={handleInputData}
               />
@@ -136,7 +133,7 @@ export default function NewJob() {
               <input
                 type='radio'
                 id='hybrid'
-                name='remote-status'
+                name='remote'
                 value='hybrid'
                 onChange={handleInputData}
               />
@@ -146,7 +143,7 @@ export default function NewJob() {
               <input
                 type='radio'
                 id='in-person'
-                name='remote-status'
+                name='remote'
                 value='false'
                 onChange={handleInputData}
               />
@@ -209,6 +206,84 @@ export default function NewJob() {
             />
           </label>
         </section>
+
+        {/* 
+        TODO: Test that clicking one radio, then clicking a different radio toggles the first radio back to 'false' onChange
+         */}
+
+        {/* Status Radio Group */}
+        {/* <section className={styles.statusSection}>
+          <section className={styles.labelTitleStatus}>
+            <DesktopComputerIcon
+              height={15}
+              width={15}
+              className={styles.labelIconRadio}
+            />
+            <label>My application status is...</label>
+          </section>
+          <section className={styles.radioArea}>
+            <label>
+              <input
+                type='radio'
+                id='remote'
+                name='wishlist'
+                value='true'
+                onChange={handleInputData}
+              />
+              Wishlist
+            </label>
+            <label>
+              <input
+                type='radio'
+                id='hybrid'
+                name='applied'
+                value='true'
+                onChange={handleInputData}
+              />
+              Applied
+            </label>
+            <label>
+              <input
+                type='radio'
+                id='in-person'
+                name='phone_screen'
+                value='true'
+                onChange={handleInputData}
+              />
+              Phone Screen
+            </label>
+            <label>
+              <input
+                type='radio'
+                id='in-person'
+                name='interviewed'
+                value='true'
+                onChange={handleInputData}
+              />
+              Behavioral Interview
+            </label>
+            <label>
+              <input
+                type='radio'
+                id='in-person'
+                name='take_home'
+                value='true'
+                onChange={handleInputData}
+              />
+              Take Home Challenge
+            </label>
+            <label>
+              <input
+                type='radio'
+                id='in-person'
+                name='technical_interview'
+                value='true'
+                onChange={handleInputData}
+              />
+              Technical Interview
+            </label>
+          </section>
+        </section> */}
 
         {/* Description */}
         <label>

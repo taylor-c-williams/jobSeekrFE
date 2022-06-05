@@ -25,4 +25,5 @@ ul {
 
 .wishlistColumn div:nth-child(even) ul {
   background-color: #f6f7f3;
+  box-shadow: 5px 5px #f6f7f3;
 }
