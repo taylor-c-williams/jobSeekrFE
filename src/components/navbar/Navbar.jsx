@@ -16,7 +16,7 @@ export default function Navbar() {
       console.error('logout error!')
     }
   }
-  console.log('user', user)
+
   const handleNav = () => {
     navigate('/newjob')
   }

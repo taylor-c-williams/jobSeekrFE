@@ -25,3 +25,11 @@ export async function getAllUserJobs(userId) {
     .withCredentials()
   return response.body
 }
+
+export async function getAllUserWishlistJobs(userId) {
+  const response = await request
+    // .post(`'http://localhost:7890/api/v1/jobs`)
+    .get(`https://polar-reaches-12563.herokuapp.com/api/v1/jobs/wishlist`)
+    .withCredentials()
+  return response.body
+}

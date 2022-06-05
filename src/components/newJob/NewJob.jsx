@@ -20,7 +20,10 @@ import styles from './newJob.module.css'
 export default function NewJob() {
   const navigate = useNavigate()
   const { user } = useUser()
-  const [inputData, setInputData] = useState({ user_id: user.id })
+  const [inputData, setInputData] = useState({
+    user_id: user.id,
+    wishlist: 'true',
+  })
 
   const handleInputData = (e) => {
     const { value, name } = e.target
@@ -30,6 +33,7 @@ export default function NewJob() {
   const handleSave = async () => {
     try {
       await postJob(inputData)
+      console.log(inputData)
       navigate('/')
     } catch (error) {
       console.error('new job error')
