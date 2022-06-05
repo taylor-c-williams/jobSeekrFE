@@ -5,7 +5,7 @@ import styles from './navbar.module.css'
 
 export default function Navbar() {
   const navigate = useNavigate()
-  const { user, setUser } = useUser()
+  const { setUser } = useUser()
 
   const handleLogOut = async () => {
     try {
