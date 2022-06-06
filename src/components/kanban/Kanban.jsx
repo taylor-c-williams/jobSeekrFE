@@ -20,17 +20,17 @@ export default function Kanban() {
     <div className={styles.kanbanBoard}>
       <div className={styles.columnTitle}>
         Wishlist
-        <Column jobs={wishlistJobs} />
+        <Column jobs={wishlistJobs} columnName={'wishlist'} />
       </div>
 
       <div className={styles.columnTitle}>
         Applied
-        <Column jobs={appliedJobs} />
+        <Column jobs={appliedJobs} columnName={'applied'} />
       </div>
 
       <div className={styles.columnTitle}>
         All Jobs
-        <Column jobs={jobs} />
+        <Column jobs={jobs} columnName={'all'} />
       </div>
     </div>
   )

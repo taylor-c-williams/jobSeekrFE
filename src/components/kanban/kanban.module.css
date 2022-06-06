@@ -4,17 +4,22 @@
 }
 
 ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
   background-color: #fff;
   box-shadow: 5px 5px #f6f7f3;
+  margin: 2vw;
   padding: 2vw;
   border: 1px solid #000;
-  list-style: none;
 }
 
 .column {
   background-color: #fff;
   border: 1px solid #000;
-  padding: 3vw;
+  padding: 2vw;
 }
 
 .column span {
