@@ -27,11 +27,6 @@ export default function Kanban() {
         Applied
         <Column jobs={appliedJobs} columnName={'applied'} />
       </div>
-
-      <div className={styles.columnTitle}>
-        All Jobs
-        <Column jobs={jobs} columnName={'all'} />
-      </div>
     </div>
   )
 }

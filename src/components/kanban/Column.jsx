@@ -26,6 +26,7 @@ export default function Column({ jobs, columnName }) {
                 // End Draggable Item
               )
             })}
+            {provided.placeholder}
           </ul>
           // End Droppable Content
         )}
