@@ -1,4 +1,4 @@
-import { Draggable } from 'react-beautiful-dnd'
+// import { Draggable } from 'react-beautiful-dnd'
 import styles from './kanban.module.css'
 
 export default function KanbanItem(job, index) {
