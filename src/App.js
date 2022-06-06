@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
+import { JobsProvider } from './context/JobsContext'
 import { UserProvider } from './context/UserContext'
 import Splash from './views/splash/Splash'
 import Home from './views/home/Home'
@@ -12,15 +13,17 @@ function App() {
   return (
     <>
       <UserProvider>
-        <Routes>
-          <Route path='auth' element={<Splash login={true} />} />
-          <Route path='signup' element={<Splash login={false} />} />
-          <Route path='/' element={<PrivateRoute children={<Home />} />} />
-          <Route
-            path='newJob'
-            element={<PrivateRoute children={<NewJob />} />}
-          />
-        </Routes>
+        <JobsProvider>
+          <Routes>
+            <Route path='auth' element={<Splash login={true} />} />
+            <Route path='signup' element={<Splash login={false} />} />
+            <Route path='/' element={<PrivateRoute children={<Home />} />} />
+            <Route
+              path='newJob'
+              element={<PrivateRoute children={<NewJob />} />}
+            />
+          </Routes>
+        </JobsProvider>
       </UserProvider>
     </>
   )

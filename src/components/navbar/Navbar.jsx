@@ -23,7 +23,7 @@ export default function Navbar() {
 
   return (
     <div className={styles.navbar}>
-      <Link to='/home'>
+      <Link to='/'>
         <h4>Seeker</h4>
       </Link>
       <button className={styles.add} onClick={handleNav}>

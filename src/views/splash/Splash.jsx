@@ -27,7 +27,7 @@ export default function Splash({ login }) {
       await setUser(newUser)
       navigate('/')
     } catch (error) {
-      console.error('signup error')
+      console.error('sign up error')
     }
   }
 
