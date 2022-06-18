@@ -2,7 +2,6 @@ import request from 'superagent'
 
 export async function getUser() {
   const res = await request
-    // .get('http://localhost:7890/api/v1/users/current-user')
     .get('https://polar-reaches-12563.herokuapp.com/api/v1/users/current-user')
     .withCredentials()
   console.log('current user response', res.body)
@@ -11,7 +10,6 @@ export async function getUser() {
 
 export async function postJob(job) {
   const response = await request
-    // .post(`'http://localhost:7890/api/v1/jobs`)
     .post(`https://polar-reaches-12563.herokuapp.com/api/v1/jobs`)
     .send(job)
     .withCredentials()
@@ -20,7 +18,6 @@ export async function postJob(job) {
 
 export async function getAllUserJobs(userId) {
   const response = await request
-    // .post(`'http://localhost:7890/api/v1/jobs`)
     .get(`https://polar-reaches-12563.herokuapp.com/api/v1/jobs`)
     .withCredentials()
   return response.body
@@ -28,8 +25,14 @@ export async function getAllUserJobs(userId) {
 
 export async function getAllUserWishlistJobs(userId) {
   const response = await request
-    // .post(`'http://localhost:7890/api/v1/jobs`)
     .get(`https://polar-reaches-12563.herokuapp.com/api/v1/jobs/wishlist`)
+    .withCredentials()
+  return response.body
+}
+
+export async function getAllUserAppliedJobs(userId) {
+  const response = await request
+    .get(`https://polar-reaches-12563.herokuapp.com/api/v1/jobs/applied`)
     .withCredentials()
   return response.body
 }
