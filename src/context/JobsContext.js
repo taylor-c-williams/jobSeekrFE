@@ -38,7 +38,7 @@ const JobsProvider = ({ children }) => {
       appliedJobs,
       setAppliedJobs,
     }),
-    [jobs]
+    [jobs, appliedJobs, wishlistJobs]
   )
   return <JobsContext.Provider value={value}> {children} </JobsContext.Provider>
 }
