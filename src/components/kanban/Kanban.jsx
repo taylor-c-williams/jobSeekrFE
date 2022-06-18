@@ -1,55 +1,31 @@
-import { useState, useEffect } from 'react'
-import { getAllUserJobs, getAllUserWishlistJobs } from '../../services/users'
-import KanbanItem from './KanbanItem'
+import { useJobs } from '../../context/JobsContext'
+import Column from './Column'
 import styles from './kanban.module.css'
 
 export default function Kanban() {
-  const [jobs, setJobs] = useState([])
-  const [wishlistJobs, setWishlistJobs] = useState([])
+  const { wishlistJobs, setWishlistJobs, appliedJobs, setAppliedJobs } =
+    useJobs()
 
-  // Fetch all user jobs
-  const fetchJobs = async () => {
-    const userJobs = await getAllUserJobs()
-    setJobs(userJobs)
-  }
-
-  // Fetch Wishlist Jobs
-  const fetchWishlistJobs = async () => {
-    const fetchedWishlistJobs = await getAllUserWishlistJobs()
-    setWishlistJobs(fetchedWishlistJobs)
-  }
-
-  useEffect(() => {
-    fetchJobs()
-    fetchWishlistJobs()
-  }, [])
-
-  console.log(jobs)
+  console.log(wishlistJobs)
 
   return (
     <div className={styles.kanbanBoard}>
-      {/* Wishlist Column */}
-      <div className={styles.wishlistColumn}>
-        <h2>Wishlist</h2>
-        {wishlistJobs.map((job) => {
-          return <KanbanItem job={job} key={job.id} />
-        })}
+      <div className={styles.columnTitle}>
+        Wishlist
+        <Column
+          jobs={wishlistJobs}
+          setJobs={setWishlistJobs}
+          columnName={'wishlist'}
+        />
       </div>
 
-      {/* Applied Column */}
-      <div className={styles.wishlistColumn}>
-        <h2>Applied</h2>
-        {jobs.map((job) => {
-          return <KanbanItem job={job} key={job.id} />
-        })}
-      </div>
-
-      {/* Phone Screen Column */}
-      <div className={styles.wishlistColumn}>
-        <h2>Phone Screen</h2>
-        {jobs.map((job) => {
-          return <KanbanItem job={job} key={job.id} />
-        })}
+      <div className={styles.columnTitle}>
+        Applied
+        <Column
+          jobs={appliedJobs}
+          setJobs={setAppliedJobs}
+          columnName={'applied'}
+        />
       </div>
     </div>
   )

@@ -12,17 +12,19 @@ import {
 } from '@heroicons/react/outline'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { useJobs } from '../../context/JobsContext'
 import { useUser } from '../../context/UserContext'
-import { postJob } from '../../services/users'
+import { getAllUserJobs, postJob } from '../../services/users'
 import NavBar from '../navbar/Navbar'
 import styles from './newJob.module.css'
 
 export default function NewJob() {
   const navigate = useNavigate()
   const { user } = useUser()
+  const { setJobs } = useJobs()
   const [inputData, setInputData] = useState({
     user_id: user.id,
-    wishlist: 'true',
+    applied: 'true',
   })
 
   const handleInputData = (e) => {
@@ -34,6 +36,8 @@ export default function NewJob() {
     try {
       await postJob(inputData)
       console.log(inputData)
+      const jobs = await getAllUserJobs()
+      setJobs(jobs)
       navigate('/')
     } catch (error) {
       console.error('new job error')

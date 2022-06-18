@@ -107,6 +107,8 @@ input {
   font-family: 'Work Sans', sans-serif;
   letter-spacing: 0.07em;
   padding: 1vh;
+  border: 1px solid #000;
+  box-shadow: 5px 5px #f6f7f3;
 }
 
 input:focus,
@@ -162,4 +164,13 @@ button:hover {
 button:active {
   color: #fcfc62;
   background-color: #c9c9c9;
+}
+
+textarea {
+  margin-top: 1.5vw;
+  height: 25vw;
+  width: 50vw;
+  font-family: 'Work Sans', sans-serif;
+  border: 1px solid #000;
+  box-shadow: 5px 5px #f6f7f3;
 }
